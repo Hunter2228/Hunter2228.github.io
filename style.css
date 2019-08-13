@@ -187,7 +187,7 @@ border: 0.5px solid black;
 .video-info {
 	text-align: center;
 	background-color: #151719;
-	font-size: 2vw;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
 .card h2{
@@ -195,18 +195,127 @@ padding-top: 3vh;
 margin-bottom: 3vh;
 }
 .footer {
-	height: 10vh;
+	height: 20vh;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	color: #aeaeae;
+
 
 }
 .footer p {
-	margin-top: 3vh;
-	margin-bottom: 2vh;
+	margin-top: 2vh;
+	margin-bottom: 3vh;
+	font-size: 20px;
 }
 .footer a {
 	text-decoration: none;
-	color: #aeaeae;
+color:black;
+display: block;
+margin-bottom: 10px;
+
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.navigation {
+	display: none;
+}
+.navigation-button {
+	position: fixed;
+	width:80px;
+	height: 80px;
+	background-color: white;
+	border-radius: 50%;
+	right: 100px;
+background-size: contain;
+
+
+}
+.header-button {
+top:30%;
+background-image: url(img/главная.png);
+	background-size: 90%;
+	background-position: center;
+background-repeat: no-repeat;
+}
+.main-button {
+	top:40%;
+	background-image: url(img/инфа.png);
+	background-size: 50%;
+	background-position: center;
+background-repeat: no-repeat;
+	
+}
+.albom-button {
+	top:50%;
+	background-image: url(img/альбом.png);
+	background-size: 50%;
+	background-position:center;
+background-repeat: no-repeat;
+}
+.clip-button {
+	top:60%;
+	background-image: url(img/клипы.png);
+	background-size: 90%;
+	background-position:center;
+background-repeat: no-repeat;
+}
+.contact-button {
+	top:70%;
+	background-image: url(img/контакты.png);
+		background-size: 50%;
+	background-position:center;
+background-repeat: no-repeat;
+	}
+
+
+@media screen and (max-width:768px) {
+.info,.second {
+	width: 100%;
+	
+	}
+.info:before,.second:before {
+	width: 100%;
+	font-size: 15px;
+}
+.albom {
+width: 100%;
+
+}
+.albom:hover {
+	height: 50vh;
+}
+.albom:hover + .play-oform {
+	
+	display: block;
+}
+iframe {
+	width: 400px;
+	height: 300px;
+}
+.footer {
+	font-size: 15px;
+}
+.play-oform {
+	width: 100%;
+
+}
+.vk img {
+	width: 150px;
+}
+.vk {
+	width: 100%;
+}
+.play {
+	right: 50px;
+	font-size: 13px;
+	width: 100px;
+	height: 40px;
+}
+	 }
+@media (min-width: 769px) and (max-width:1200) {
+iframe {
+	width: 400px;
+	height: 300px;
+}
 
 }
