@@ -35,9 +35,7 @@ transform: translateX(-50%);
 
 
 }
-.button:hover {
-	
-}
+
 .main {
 	height: 100vh;
 	background-color: #151719;
@@ -216,9 +214,7 @@ margin-bottom: 10px;
 .footer a:hover {
 	text-decoration: underline;
 }
-.navigation {
-	display: none;
-}
+
 .navigation-button {
 	position: fixed;
 	width:80px;
@@ -238,7 +234,7 @@ background-image: url(img/главная.png);
 background-repeat: no-repeat;
 }
 .main-button {
-	top:40%;
+	top:41%;
 	background-image: url(img/инфа.png);
 	background-size: 50%;
 	background-position: center;
@@ -246,21 +242,21 @@ background-repeat: no-repeat;
 	
 }
 .albom-button {
-	top:50%;
+	top:52%;
 	background-image: url(img/альбом.png);
 	background-size: 50%;
 	background-position:center;
 background-repeat: no-repeat;
 }
 .clip-button {
-	top:60%;
+	top:63%;
 	background-image: url(img/клипы.png);
 	background-size: 90%;
 	background-position:center;
 background-repeat: no-repeat;
 }
 .contact-button {
-	top:70%;
+	top:74%;
 	background-image: url(img/контакты.png);
 		background-size: 50%;
 	background-position:center;
@@ -268,14 +264,14 @@ background-repeat: no-repeat;
 	}
 
 
-@media screen and (max-width:768px) {
+@media(max-width: 1200px) {
 .info,.second {
 	width: 100%;
 	
 	}
 .info:before,.second:before {
 	width: 100%;
-	font-size: 15px;
+	font-size: 30px;
 }
 .albom {
 width: 100%;
@@ -289,33 +285,141 @@ width: 100%;
 	display: block;
 }
 iframe {
-	width: 400px;
-	height: 300px;
+	width: 500px;
+	height: 500px;
 }
 .footer {
-	font-size: 15px;
+	font-size: 25px;
 }
 .play-oform {
 	width: 100%;
 
 }
 .vk img {
-	width: 150px;
+	width: 200px;
 }
 .vk {
 	width: 100%;
 }
 .play {
 	right: 50px;
-	font-size: 13px;
-	width: 100px;
-	height: 40px;
+	font-size: 25px;
+	width: 200px;
+	height: 50px;
+}
+.navigation-button {
+	position: absolute;
+	width:80px;
+	height: 80px;
+top:10px;
+left: 25%;
+}
+.main-button {
+	left: 35%;
+}
+.albom-button {
+	left:45%;
+
+}
+.clip-button {
+	left:55%;
+}
+.contact-button {
+	left: 65%;
+}
+.button {
+	width: 80px;
+	height: 80px;
+}
+.play {
+	line-height: 4vh;
+}
+.footer p {
+	font-size: 30px;
+}
+.video-info h2 {
+	font-size: 30px;
 }
 	 }
-@media (min-width: 769px) and (max-width:1200) {
-iframe {
-	width: 400px;
-	height: 300px;
+@media(max-width: 769px) {
+.play {
+	line-height: 4vh;
 }
+.footer {
+	font-size: 15px;
+}
+.info:before,.second:before {
+	width: 100%;
+	font-size: 20px;
+}
+.navigation-button {
+	left: 15%;
+	
+}
+.main-button {
+	left: 30%;
+}
+.albom-button {
+	left:45%;
 
+}
+.clip-button {
+	left:60%;
+}
+.contact-button {
+	left: 75%;
+}
+}
+@media(max-width: 480px) {
+	.info:before,.second:before {
+	width: 100%;
+	font-size: 10px;
+}
+iframe {
+	width: 200px;
+	height: 150px;
+}
+.navigation-button {
+	left: 15%;
+	width: 30px;
+	height: 30px;
+}
+.main-button {
+	left: 30%;
+}
+.albom-button {
+	left:45%;
+
+}
+.clip-button {
+	left:60%;
+}
+.contact-button {
+	left: 75%;
+}
+.button {
+	width: 50px;
+	height: 50px;
+}
+.play {
+	right: 20px;
+	font-size: 13px;
+	width: 80px;
+	height: 25px;
+}
+.vk img {
+	width: 100px;
+}
+.footer {
+	font-size: 10px;
+}
+.footer p {
+	font-size: 15px;
+}
+.video-info h2 {
+	font-size: 15px;
+}
+.play {
+	line-height: 4vh;
+}
 }
